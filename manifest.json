@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "IFSTA Image Link Grabber",
+  "version": "1.0",
+  "description": "Extracts the default image URL for IFSTA shop products and displays it in a popup.",
+  "permissions": ["activeTab"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "32": "images/icon32.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "32": "images/icon32.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  }
+}
