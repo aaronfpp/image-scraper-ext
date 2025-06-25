@@ -2,8 +2,18 @@
   "manifest_version": 3,
   "name": "IFSTA Image Link Grabber",
   "version": "1.0",
-  "description": "Extracts the default image URL for IFSTA shop products and displays it in a popup.",
+  "description": "Extracts IFSTA product SKU and injects it into ImageScraper for downloading images.",
   "permissions": ["activeTab"],
+  "host_permissions": [
+    "https://www.ifsta.org/*",
+    "https://ifsta-image.netlify.app/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://ifsta-image.netlify.app/*"],
+      "js": ["content.js"]
+    }
+  ],
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
